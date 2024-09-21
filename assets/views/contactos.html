@@ -3,24 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactos</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar-container">
             <div class="menu-text" onclick="toggleMenu()">Menu</div>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-briefcase"></i> Trabajos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-rocket"></i> Proyectos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-globe"></i> Servicios</a></li>
+                <li class="nav-item"><a href="../../index.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                <li class="nav-item"><a href="trabajos.html" class="nav-link"><i class="fas fa-briefcase"></i> Trabajos</a></li>
+                <li class="nav-item"><a href="proyectos.html" class="nav-link"><i class="fas fa-rocket"></i> Proyectos</a></li>
+                <li class="nav-item"><a href="servicios.html" class="nav-link"><i class="fas fa-globe"></i> Servicios</a></li>
                 <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
             </ul>
         </div>
     </nav>
-    <h1>Contactos</h1>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <div class="container">
+        <h1 class="center-title">Contacto</h1>
+        <div class="contact-info">
+            <p>Si tienes alguna pregunta, no dudes en contactarnos:</p>
+            <h3>Email:</h3>
+            <p>webdev@ejemplo.com</p>
+            <h3>Teléfono:</h3>
+            <p>(+503) 1234-5678</p>
+            <h3>Dirección:</h3>
+            <p>San Salvador</p>
+        </div>
+        <div class="contact-form">
+            <h3>Envíanos un Mensaje</h3>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <style>
+        .center-title {
+          margin-top: 50px;
+          text-align: center;
+        }
+        .contact-info {
+          margin-top: 30px;
+          text-align: center;
+        }
+        .contact-form {
+          margin-top: 30px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>
