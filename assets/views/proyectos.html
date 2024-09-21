@@ -5,22 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar-container">
             <div class="menu-text" onclick="toggleMenu()">Menu</div>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-briefcase"></i> Trabajos</a></li>
+                <li class="nav-item"><a href="../../index.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                <li class="nav-item"><a href="trabajos.html" class="nav-link"><i class="fas fa-briefcase"></i> Trabajos</a></li>
                 <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-rocket"></i> Proyectos</a></li>
                 <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-globe"></i> Servicios</a></li>
                 <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
             </ul>
         </div>
     </nav>
-    <h1>Proyectos</h1>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <div class="container">
+        <h1 class="center-title">Proyectos Actuales</h1>
+        <div class="project-listing">
+    
+          <div class="project-item">
+            <h3>Proyecto Alpha</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+            <button type="button" class="btn btn-primary">Ver Más</button>
+          </div>
+    
+          <div class="project-item">
+            <h3>Proyecto Beta</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+            <button type="button" class="btn btn-primary">Ver Más</button>
+          </div>
+    
+          <div class="project-item">
+            <h3>Proyecto Gamma</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+            <button type="button" class="btn btn-primary">Ver Más</button>
+          </div>
+    
+        </div>
+      </div>
+
+    <style>
+        .center-title {
+          margin-top: 50px;
+          text-align: center;
+        }
+        .project-listing {
+          margin-top: 30px;
+        }
+        .project-item {
+          margin-bottom: 20px;
+          padding: 20px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>
